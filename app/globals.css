@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/**
+ * Backgrounds
+ */
+ .backgrounds {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  z-index: -1;
+  background-image: url('https://cdncf.vtuberhub.in.th/TuuperCoveBanners.png'); }
+  .backgrounds .background {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-attachment: fixed; }
+
+.overlay:after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  background: #3F51B5;
+  opacity: 0.8; }
+
+/**
+ * Sections
+ */
+ .section {
+  width: 100%;
+  float: left;
+  overflow: hidden; }
+
+.section-title {
+  text-align: center;
+  color: #FFF;
+  text-transform: uppercase;
+  font-weight: normal;
+  padding: 30px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  width: 100%;
+  clear: both; }
+
+  .code {
+    width: 40%;
+    clear: both;
+    height: 200px;
+    background: #FFF;
+    border-radius: 2px;
+    margin: 12vh 0;
+    padding: 10px; }
+    .code pre, .code code {
+      height: 100%;
+      margin: 0; }
+    .code code {
+      padding: 20px 0 0 20px; }
+    .code--small code {
+      padding-top: 75px; }
+    .code--left {
+      float: left; }
+    .code--right {
+      float: right; }
+    .code--wider {
+      width: 60%; }
+      .code--wider code {
+        padding-top: 60px; }
+  
+  .section--more {
+    color: #FFF;
+    background: #0E0F34;
+    padding: 20px 0 40px 0; }
+  
+  .section-group {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 30px 0; }
+    .section-group h3 {
+      margin: 0 0 20px 0;
+      text-transform: uppercase; }
+    .section-group h4 {
+      font-weight: normal;
+      color: rgba(255, 255, 255, 0.6); }
+    .section-group code {
+      padding: 20px;
+      font-size: 1.2em; }
+    .section-group .btn {
+      margin-right: 20px; }
+  
+  .btn {
+    padding: 10px 20px;
+    border: 1px solid #FF4081;
+    display: inline-block;
+    position: relative;
+    -webkit-transition: all 0.2s ease;
+            transition: all 0.2s ease;
+    overflow: hidden; }
+    .btn:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      width: 1px;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background: #FF4081;
+      -webkit-transition: -webkit-transform 0.2s ease;
+              transition: transform 0.2s ease;
+      z-index: 0;
+      opacity: 0; }
+    .btn span {
+      position: relative;
+      z-index: 5; }
+    .btn:hover {
+      color: #FFF; }
+      .btn:hover:before {
+        -webkit-transform: scaleX(200);
+            -ms-transform: scaleX(200);
+                transform: scaleX(200);
+        opacity: 1; }
